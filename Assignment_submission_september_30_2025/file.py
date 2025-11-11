@@ -6,7 +6,7 @@ folder = r"C:\Users\pabba\Downloads"
 
 # ✅ Check if folder exists
 if not os.path.exists(folder):
-    print("❌ Folder not found! Check the path.")
+    print(" Folder not found! Check the path.")
 else:
     files = os.listdir(folder)
     sizes = []
@@ -24,8 +24,8 @@ else:
     else:
         sizes = np.array(sizes)
 
-        print("📁 Total Files:", len(sizes))
-        print("📊 Average File Size:", np.mean(sizes), "bytes")
-        print("📈 Largest File Size:", np.max(sizes), "bytes")
-        print("📉 Smallest File Size:", np.min(sizes), "bytes")
+        print(" Total Files:", len(sizes))
+        print(" Average File Size:", np.mean(sizes), "bytes")
+        print(" Largest File Size:", np.max(sizes), "bytes")
+        print(" Smallest File Size:", np.min(sizes), "bytes")
 
